@@ -5,6 +5,10 @@ lsp.preset("recommended")
 lsp.ensure_installed({
   'lua_ls',
   'bashls',
+  'yamlls',
+  'jsonls',
+  'ansiblels',
+  'dockerls',
 })
 
 -- Fix Undefined global 'vim'
