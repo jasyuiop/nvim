@@ -41,6 +41,8 @@ return require('packer').startup(function(use)
         end
     }
 
+    use('ThePrimeagen/vim-be-good')
+
     -- LSP
     use {
         'VonHeikemen/lsp-zero.nvim',
