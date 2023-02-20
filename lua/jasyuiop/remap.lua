@@ -50,4 +50,3 @@ vim.keymap.set("n", "<leader>mp", "<cmd>Glow<cr>")
 
 -- Ansible lsp için gerekli
 vim.keymap.set("n", "<leader>la", "<cmd>set ft=yaml.ansible<cr>")
-
