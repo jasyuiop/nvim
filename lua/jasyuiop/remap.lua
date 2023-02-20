@@ -45,4 +45,9 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
+-- Glow markdown preview
 vim.keymap.set("n", "<leader>mp", "<cmd>Glow<cr>")
+
+-- Ansible lsp için gerekli
+vim.keymap.set("n", "<leader>la", "<cmd>set ft=yaml.ansible<cr>")
+
