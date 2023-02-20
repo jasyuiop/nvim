@@ -43,7 +43,9 @@ return require('packer').startup(function(use)
 
     use('ThePrimeagen/vim-be-good')
 
-    use {"ellisonleao/glow.nvim"}
+    use {'ellisonleao/glow.nvim'}
+
+    use {'jose-elias-alvarez/null-ls.nvim'}
 
     -- LSP
     use {

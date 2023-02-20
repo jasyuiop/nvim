@@ -40,6 +40,8 @@ return require('packer').startup(function(use)
 
     use {"ellisonleao/glow.nvim"}
 
+    use {'jose-elias-alvarez/null-ls.nvim'}
+
     -- Lua
     use {
         "folke/trouble.nvim",
