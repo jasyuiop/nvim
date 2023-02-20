@@ -38,6 +38,8 @@ return require('packer').startup(function(use)
 
     use('ThePrimeagen/vim-be-good')
 
+    use {"ellisonleao/glow.nvim", config = function() require("glow").setup() end}
+
     -- Lua
     use {
         "folke/trouble.nvim",
