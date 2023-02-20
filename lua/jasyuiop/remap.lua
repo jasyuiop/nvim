@@ -44,3 +44,8 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+
+-- neovim üzerinde yapılan değişiklikleri çıkmadan geçerli kılmak source .zshrc gibi.
+vim.keymap.set("n", "<leader>mp", function()
+    vim.cmd("Glow")
+end)
