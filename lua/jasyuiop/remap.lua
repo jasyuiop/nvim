@@ -35,6 +35,9 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- lsp kullanarak file'ı biçimlendirir.
+-- spesifik bir lsp'nin format olayı varsa sende başka bir formatter kullanıyorsan
+-- lsp'nin bu işlevini devre dışı bırakıp null-ls'de o formatter'i kullanabilirsin.
+-- https://github.com/VonHeikemen/lsp-zero.nvim/blob/v1.x/advance-usage.md#buffer-formats-twice
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 -- anlatmaya gerek yok görüyorsun
