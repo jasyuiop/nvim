@@ -49,6 +49,8 @@ return require('packer').startup(function(use)
 
     use {'numToStr/Comment.nvim'}
 
+    use {'lukas-reineke/indent-blankline.nvim'}
+
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
