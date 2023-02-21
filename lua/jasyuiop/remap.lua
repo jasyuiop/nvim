@@ -34,11 +34,10 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 -- bash script gibi dosyaları tek hamlede executable yapmaya yarıyor
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
--- lsp kullanarak file'ı biçimlendirir.
--- spesifik bir lsp'nin format olayı varsa sende başka bir formatter kullanıyorsan
--- lsp'nin bu işlevini devre dışı bırakıp null-ls'de o formatter'i kullanabilirsin.
--- https://github.com/VonHeikemen/lsp-zero.nvim/blob/v1.x/advance-usage.md#buffer-formats-twice
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+
+-- null-ls'in çalıştığı bufferlarda NullFormat komutu geçerli oluyor
+vim.keymap.set("n", "<leader>nf", "<cmd>NullFormat<CR>")
 
 -- anlatmaya gerek yok görüyorsun
 vim.keymap.set("i", "<C-c>", "<Esc>")
@@ -49,7 +48,7 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 -- Glow markdown preview
-vim.keymap.set("n", "<leader>mp", "<cmd>Glow<cr>")
+vim.keymap.set("n", "<leader>mp", "<cmd>Glow<CR>")
 
 -- Ansible lsp için gerekli
-vim.keymap.set("n", "<leader>la", "<cmd>set ft=yaml.ansible<cr>")
+vim.keymap.set("n", "<leader>la", "<cmd>set ft=yaml.ansible<CR>")
