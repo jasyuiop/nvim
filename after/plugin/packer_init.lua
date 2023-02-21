@@ -12,9 +12,9 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
+    -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
-    -- My plugins here
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
         -- or                            , branch = '0.1.x',
@@ -36,13 +36,6 @@ return require('packer').startup(function(use)
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
 
-    use('ThePrimeagen/vim-be-good')
-
-    use {"ellisonleao/glow.nvim"}
-
-    use {'jose-elias-alvarez/null-ls.nvim'}
-
-    -- Lua
     use {
         "folke/trouble.nvim",
         requires = "nvim-tree/nvim-web-devicons",
@@ -56,7 +49,12 @@ return require('packer').startup(function(use)
         end
     }
 
-    -- LSP
+    use('ThePrimeagen/vim-be-good')
+
+    use {'ellisonleao/glow.nvim'}
+
+    use {'jose-elias-alvarez/null-ls.nvim'}
+
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
