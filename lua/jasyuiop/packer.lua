@@ -47,6 +47,8 @@ return require('packer').startup(function(use)
 
     use {'jose-elias-alvarez/null-ls.nvim'}
 
+    use {'numToStr/Comment.nvim'}
+
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
