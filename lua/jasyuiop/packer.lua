@@ -80,6 +80,16 @@ return require('packer').startup(function(use)
         }
     }
 
+    -- DAP
+    use {
+      'mfussenegger/nvim-dap',
+      requires = { 'rcarriga/nvim-dap-ui', 'jay-babu/mason-nvim-dap.nvim'}
+    }
+
+    use { 'leoluz/nvim-dap-go' }
+
+    -- Python için ->  nvim-dap-python kullanabilirim.
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if packer_bootstrap then
