@@ -26,18 +26,13 @@ vim.opt.undofile = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
-vim.o.completeopt = 'menuone,noselect'
-
 vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
--- Decrease update time
-vim.opt.updatetime = 250
-vim.opt.timeout = true
-vim.opt.timeoutlen = 300
+vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
