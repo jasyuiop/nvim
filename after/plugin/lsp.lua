@@ -2,6 +2,10 @@ local lsp = require("lsp-zero")
 
 lsp.preset("recommended")
 
+-- 'ansiblels', 'bashls', 'docker_compose_language_service', 'gopls', 'jsonls',
+-- 'marksman', 'pyright', 'rust_analyzer', 'yamlls', 'ansible_lint', 'golangcilint',
+-- 'markdownlint', 'pylint', 'shellcheck', 'yamllint', 'autopep8', 'goimports',
+-- 'rustfmt', 'shfmt', 'yamlfmt', 'bash-debug-adapter', 'delve',
 lsp.ensure_installed({
     'lua_ls',
 })
