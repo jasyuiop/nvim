@@ -1,4 +1,3 @@
-vim.opt.termguicolors = true
 vim.cmd [[highlight IndentBlanklineIndent1 guifg=#7c6f64 gui=nocombine]]
 
 require("indent_blankline").setup {
