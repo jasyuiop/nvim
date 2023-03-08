@@ -20,8 +20,7 @@ vim.opt.smartcase = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.config/nvim/undodir"
-vim.opt.undofile = true
+vim.opt.undofile = false
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
@@ -35,6 +34,8 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
+
+vim.opt.signcolumn = "no"
 
 -- [[ Highlight on yank ]]
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
