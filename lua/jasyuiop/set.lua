@@ -20,7 +20,6 @@ vim.opt.smartcase = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undofile = false
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
