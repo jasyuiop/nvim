@@ -30,11 +30,13 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
-vim.opt.updatetime = 50
+vim.opt.updatetime = 300
 
 vim.opt.colorcolumn = "80"
 
-vim.opt.signcolumn = "no"
+vim.opt.signcolumn = "number"
+
+vim.opt.showmode = false
 
 -- [[ Highlight on yank ]]
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
