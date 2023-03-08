@@ -36,9 +36,6 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 cmp_mappings['<Tab>'] = nil
 cmp_mappings['<S-Tab>'] = nil
 
--- lsp-zero yazarı .setup_nvim_cmp'den kurtulmak istiyor bu yüzden yerine
---cmp.setup(cmp_mappings)
--- gibi bir şey kullanabilirim (tab hala işliyor bi bak ilerde)
 lsp.setup_nvim_cmp({
   mapping = cmp_mappings
 })
