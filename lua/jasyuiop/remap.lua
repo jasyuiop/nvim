@@ -40,5 +40,15 @@ vim.keymap.set("n", "<leader>nf", "<cmd>NullFormat<CR>")
 -- Escape insert mode
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
+-- Close windows
+vim.keymap.set("n", "<leader>qq", ":q<CR>")
+
+-- Save
+vim.keymap.set("n", "<leader>w", "<cmd>:w<CR>")
+
+-- New empty line
+vim.keymap.set("n", "<leader>o", "o<Esc>")
+vim.keymap.set("n", "<leader>O", "O<Esc>")
+
 -- Ansible lsp'nın file'ı yaml dosyasından ayırt etmesi lazım
 vim.keymap.set("n", "<leader>la", "<cmd>set ft=yaml.ansible<CR>")
