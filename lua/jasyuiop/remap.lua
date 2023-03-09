@@ -35,7 +35,7 @@ vim.keymap.set("n", "<leader>sr", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left>
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 -- format düzgün çalışmazsa ->
-vim.keymap.set("n", "<leader>nf", "<cmd>NullFormat<CR>")
+-- vim.keymap.set("n", "<leader>nf", "<cmd>NullFormat<CR>")
 
 -- Escape insert mode
 vim.keymap.set("i", "<C-c>", "<Esc>")
