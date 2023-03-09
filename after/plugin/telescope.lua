@@ -7,6 +7,9 @@ vim.keymap.set('n', '<leader>ps', function()
   builtin.grep_string({ search = vim.fn.input("Grep > ") });
 end)
 
+-- find in git files, "git-ls-files" respect .gitignore
+vim.keymap.set('n', '<leader>pg', builtin.git_files, {})
+
 -- live grep
 vim.keymap.set('n', '<leader>pl', builtin.live_grep, {})
 
