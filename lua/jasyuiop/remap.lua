@@ -53,5 +53,5 @@ vim.keymap.set("n", "<leader>O", "O<Esc>")
 -- unhighlight search 
 vim.keymap.set("n", "<CR>", ":nohlsearch<cr>", {silent=true})
 
--- Ansible lsp'nın file'ı yaml dosyasından ayırt etmesi lazım
+-- Lsp'nin yaml dosyasını iki farklı language server için ayırt etmesi lazım
 vim.keymap.set("n", "<leader>la", "<cmd>set ft=yaml.ansible<CR>")
