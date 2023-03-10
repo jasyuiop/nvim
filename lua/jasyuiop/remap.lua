@@ -40,16 +40,6 @@ vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 -- Escape insert mode
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
--- Close windows
-vim.keymap.set("n", "<leader>qq", ":q<CR>")
-
--- Save
-vim.keymap.set("n", "<leader>w", "<cmd>:w<CR>")
-
--- New empty line
-vim.keymap.set("n", "<leader>o", "o<Esc>")
-vim.keymap.set("n", "<leader>O", "O<Esc>")
-
 -- unhighlight search 
 vim.keymap.set("n", "<CR>", ":nohlsearch<cr>", {silent=true})
 
