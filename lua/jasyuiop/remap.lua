@@ -43,5 +43,8 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 -- unhighlight search 
 vim.keymap.set("n", "<CR>", ":nohlsearch<cr>", {silent=true})
 
+-- executable files
+vim.keymap.set("n", "<leader>ex", "<cmd>!chmod +x %<CR>", { silent = true })
+
 -- Lsp'nin yaml dosyasını iki farklı language server için ayırt etmesi lazım
 vim.keymap.set("n", "<leader>la", "<cmd>set ft=yaml.ansible<CR>")
