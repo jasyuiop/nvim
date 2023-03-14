@@ -15,3 +15,9 @@ vim.keymap.set('n', '<leader>pl', builtin.live_grep, {})
 
 -- help
 vim.keymap.set('n', '<leader>ph', builtin.help_tags, {})
+
+-- diagnostics
+vim.keymap.set('n', '<leader>pd', builtin.diagnostics, {})
+
+-- man pages
+vim.keymap.set('n', '<leader>pm', builtin.man_pages, {})
