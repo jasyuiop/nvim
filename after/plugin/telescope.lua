@@ -21,3 +21,6 @@ vim.keymap.set('n', '<leader>pd', builtin.diagnostics, {})
 
 -- man pages
 vim.keymap.set('n', '<leader>pm', builtin.man_pages, {})
+
+-- buffer
+vim.keymap.set('n', '<leader>pb', builtin.buffers, {})
