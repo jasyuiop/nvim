@@ -1,9 +1,6 @@
 -- leader key
 vim.g.mapleader = " "
 
--- directory görünümüne dön
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-
 -- Visual modda J/K ile highlight edilenleri taşımak
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
