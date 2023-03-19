@@ -38,6 +38,8 @@ vim.opt.signcolumn = "number"
 
 vim.opt.showmode = false
 
+vim.opt.cmdheight = 0
+
 -- [[ Highlight on yank ]]
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
 vim.api.nvim_create_autocmd('TextYankPost', {
