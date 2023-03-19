@@ -35,6 +35,14 @@ return require('packer').startup(function(use)
 
   use { 'jose-elias-alvarez/null-ls.nvim' }
 
+  -- DAP
+  use {
+    'mfussenegger/nvim-dap',
+    requires = { 'rcarriga/nvim-dap-ui', 'jay-babu/mason-nvim-dap.nvim' }
+  }
+
+  use { 'leoluz/nvim-dap-go' }
+
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v1.x',
