@@ -37,11 +37,19 @@ vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 -- Escape insert mode
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
--- unhighlight search 
-vim.keymap.set("n", "<CR>", ":nohlsearch<cr>", {silent=true})
+-- unhighlight search
+vim.keymap.set("n", "<CR>", ":nohlsearch<cr>", { silent = true })
 
 -- executable files
 vim.keymap.set("n", "<leader>ex", "<cmd>!chmod +x %<CR>", { silent = true })
 
--- Lsp'nin yaml dosyasını iki farklı language server için ayırt etmesi lazım
-vim.keymap.set("n", "<leader>la", "<cmd>set ft=yaml.ansible<CR>")
+-- ansible file'ı olduğu tanımlanmadan önce diğer yaml ile alakalı lsp serverlar
+-- da çalıştığı için sorun olmaması açısından onları durduruyorum.
+function ANSIBLE()
+  vim.cmd "set ft=yaml.ansible"
+  vim.cmd "LspStop"
+  vim.cmd "LspStart"
+end
+
+-- ansiblels'nin çalışması için yaml.ansible olarak tanımlanması lazım
+vim.keymap.set("n", "<leader>la", "<cmd>lua ANSIBLE()<CR>")
