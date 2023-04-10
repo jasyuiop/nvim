@@ -10,8 +10,6 @@ require('mason-nvim-dap').setup {
   },
 }
 
-require('mason-nvim-dap').setup_handlers()
-
 vim.keymap.set('n', '<F5>', dap.continue)
 vim.keymap.set('n', '<F6>', dap.step_into)
 vim.keymap.set('n', '<F7>', dap.step_over)
